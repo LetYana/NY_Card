@@ -1,0 +1,476 @@
+html,
+body {
+  height: 100%;
+  font-family: customfont;
+  background-color: #ecf0f6;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  min-height: 360px;
+  display: flex;
+}
+
+.parallax {
+  flex: 1 0 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/*.parallax:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7.4%;
+  background-color: #fff;
+  z-index: 1;
+}*/
+
+.parallax_list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.parallax_list li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  bottom: 2.59%;
+  left: 44.69%;
+  width: 11vw;
+  height: 2.91vh;
+  z-index: 2;
+}
+
+h1 {
+  position: absolute;
+  left: 34.42%;
+  top: 9.72%;
+  text-align: center;
+  font-size: 2.938em;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  z-index: 1;
+}
+
+.white_top {
+  position: absolute;
+  width: 100%;
+  height: 4.63%;
+  background-color: #fff;
+  top: 0;
+  z-index: 1;
+}
+
+.white_left {
+  position: absolute;
+  width: 2.6%;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.white_right {
+  position: absolute;
+  width: 2.6%;
+  height: 100vh;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.white_footer {
+  position: absolute;
+  width: 100%;
+  height: 7.4%;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 1;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.roof {
+  position: absolute;
+  width: 9.635vw;
+  height: 5.74vh;
+  top: 7.4%;
+  left: 11.6667%;
+  animation-name: roofing;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes roofing {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 5%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.bg-line {
+  top: 12.86%;
+  position: absolute;
+  width: 100vw;
+  height: 60.083vh;
+}
+
+.parallax_blade_1 {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  top: 16%;
+  right: 3%;
+  animation-name: blading1;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blading1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.parallax_blade_2 {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  top: 16%;
+  right: -8.5%;
+  animation-name: blading2;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blading2 {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+.parallax_nytree_1 {
+  position: absolute;
+  width: 11.04vw;
+  height: 25.46vh;
+  top: 53.42%;
+  left: 5.2%;
+}
+
+.crazy_animation_tree {
+  animation: nytree1 0.2s 0.1s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-play-state: paused;
+}
+
+.crazy_animation_tree:hover {
+  animation: nytree1 0.2s 0.1s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-play-state: paused;
+}
+
+@keyframes nytree1 {
+  0% {
+    transform: translate3d(15%, 0, 0) rotateZ(6deg);
+  }
+  100% {
+    transform: translate3d(-15%, 0, 0) rotateZ(-6deg);
+  }
+}
+
+.parallax_nytree_2 {
+  position: absolute;
+  width: 12.7vw;
+  height: 29.4vh;
+  top: 51.3%;
+  left: 13.4%;
+  animation: nytree2 2s 0.1s infinite alternate
+    cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes nytree2 {
+  0% {
+    transform: translate3d(15%, 0, 0) rotateZ(6deg);
+  }
+  100% {
+    transform: translate3d(-15%, 0, 0) rotateZ(-6deg);
+  }
+}
+
+.parallax_nytree_3 {
+  position: absolute;
+  width: 14.3vw;
+  height: 32.7vh;
+  top: 48.3%;
+  right: 18.2%;
+}
+
+.parallax_nytree_4 {
+  position: absolute;
+  width: 12.3vw;
+  height: 28.6vh;
+  top: 50.3%;
+  right: 4.6%;
+}
+
+.parallax_central_element {
+  position: absolute;
+  width: 24.11vw;
+  height: 65.5vh;
+  top: 21.8%;
+  left: 37%;
+  overflow: visible;
+}
+
+.parallax_central_element img {
+  width: 100%;
+}
+
+.parallax-toy1 {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax-toy2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax-toy3 {
+  position: absolute;
+  top: 52%;
+  left: 30%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax-toy4 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax-toy5 {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax-toy6 {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax-toy1,
+.parallax-toy2,
+.parallax-toy3,
+.parallax-toy4,
+.parallax-toy5,
+.parallax-toy6 img {
+  width: 2.5vw;
+}
+
+.parallax-toy1:hover,
+.parallax-toy2:hover,
+.parallax-toy3:hover,
+.parallax-toy4:hover,
+.parallax-toy5:hover,
+.parallax-toy6:hover {
+  transform: scale(3);
+}
+
+/* .parallax_decor span {
+  display: inline-block;
+  width: 43.897px;
+  height: 49.602px;
+  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.parallax-toy1 {
+  top: 22%;
+  left: 50%;
+}
+
+
+
+.parallax-toy1 span {
+  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
+}
+
+.parallax-toy2 {
+  top: 40%;
+  left: 40%;
+}
+
+.parallax-toy2 span {
+  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
+}
+
+.parallax-toy3 {
+  top: 52%;
+  left: 30%;
+}
+
+.parallax-toy3 span {
+  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
+}
+
+.parallax-toy4 {
+  top: 60%;
+  left: 50%;
+}
+
+.parallax-toy4 span {
+  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
+}
+
+.parallax-toy5 {
+  top: 55%;
+  left: 70%;
+}
+
+.parallax-toy5 span {
+  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
+}
+
+.parallax-toy6 {
+  top: 70%;
+  left: 35%;
+}
+
+.parallax-toy6 span {
+  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
+} */
+
+.parallax_gift_1 {
+  position: absolute;
+  top: 79.2%;
+  left: 42.1%;
+  z-index: 4;
+  transition: transform 0.1s;
+}
+
+.parallax_gift_1 img {
+  width: 4.2vw;
+}
+
+.parallax_gift_2 {
+  position: absolute;
+  top: 78.6%;
+  left: 44.9%;
+  z-index: 2;
+  transition: transform 0.1s;
+}
+
+.parallax_gift_2 img {
+  width: 4.3vw;
+}
+
+.parallax_gift_3 {
+  position: absolute;
+  top: 79.2%;
+  left: 47.7%;
+  z-index: 3;
+  transition: transform 0.1s;
+}
+
+.parallax_gift_3 img {
+  width: 5vw;
+}
+
+.parallax_gift_4 {
+  position: absolute;
+  top: 78%;
+  left: 51.3%;
+  z-index: 0;
+  transition: transform 0.1s;
+}
+
+.parallax_gift_4 img {
+  width: 4.2vw;
+}
+
+.parallax_gift_5 {
+  position: absolute;
+  top: 80.55%;
+  left: 54.3%;
+  z-index: 1;
+  transition: transform 0.1s;
+}
+
+.parallax_gift_5 img {
+  width: 3.6vw;
+}
+
+.parallax_gift_1:hover,
+.parallax_gift_2:hover,
+.parallax_gift_3:hover,
+.parallax_gift_4:hover,
+.parallax_gift_5:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 7px 2px rgba(255, 218, 57, 0.2),
+    -2px -2px 7px 2px rgb(255, 218, 57, 0.2);
+}
