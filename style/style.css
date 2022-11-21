@@ -60,9 +60,14 @@ body {
   z-index: 2;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   position: absolute;
-  left: 34.42%;
+  left: 40%;
   top: 9.72%;
   text-align: center;
   font-size: 2.938em;
