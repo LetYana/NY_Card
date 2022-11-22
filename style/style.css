@@ -7,7 +7,14 @@ body {
 
 .wrapper {
   overflow: hidden;
+  /* opacity: 0; */
+  transition: all 1s ease 0s;
+  min-height: 100%;
 }
+
+/* .wrapper .active {
+  opacity: 1;
+} */
 
 .page {
   position: absolute;
@@ -320,13 +327,23 @@ h1 {
   transition: transform 0.1s;
 }
 
-.parallax-toy1,
-.parallax-toy2,
-.parallax-toy3,
-.parallax-toy4,
-.parallax-toy5,
+.parallax-toy1 img,
+.parallax-toy2 img,
+.parallax-toy3 img,
+.parallax-toy4 img,
+.parallax-toy5 img,
 .parallax-toy6 img {
   width: 2.5vw;
+  animation: swing 2s infinite alternate cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 
 .parallax-toy1:hover,
@@ -337,78 +354,6 @@ h1 {
 .parallax-toy6:hover {
   transform: scale(3);
 }
-
-/* .parallax_decor span {
-  display: inline-block;
-  width: 43.897px;
-  height: 49.602px;
-  animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-@keyframes swing {
-  0% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-.parallax-toy1 {
-  top: 22%;
-  left: 50%;
-}
-
-
-
-.parallax-toy1 span {
-  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
-}
-
-.parallax-toy2 {
-  top: 40%;
-  left: 40%;
-}
-
-.parallax-toy2 span {
-  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
-}
-
-.parallax-toy3 {
-  top: 52%;
-  left: 30%;
-}
-
-.parallax-toy3 span {
-  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
-}
-
-.parallax-toy4 {
-  top: 60%;
-  left: 50%;
-}
-
-.parallax-toy4 span {
-  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
-}
-
-.parallax-toy5 {
-  top: 55%;
-  left: 70%;
-}
-
-.parallax-toy5 span {
-  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
-}
-
-.parallax-toy6 {
-  top: 70%;
-  left: 35%;
-}
-
-.parallax-toy6 span {
-  background: url("../img/decoration_1.png") 0 0 / 100% no-repeat;
-} */
 
 .parallax_gift_1 {
   position: absolute;

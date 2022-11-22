@@ -1,3 +1,12 @@
+// const Parallax = require("parallax-js");
+
+// $(document).ready(function () {
+//   $(".parallax_list>li").addClass("layer");
+//   $(".parallax_list").parallax();
+
+//   $(".wrapper").addClass("active");
+// });
+
 function openBoxFunction(event) {
   event.preventDefault();
   const image = document.querySelector("#present_1");
@@ -7,16 +16,3 @@ function openBoxFunction(event) {
 
 let giftBox = document.querySelector(".parallax_gift_1");
 giftBox.addEventListener("click", openBoxFunction);
-
-const test = document.getElementById("test");
-test.addEventListener(
-  "mouseover",
-  (event) => {
-    event.target.classList.add("crazy_animation_tree");
-
-    setTimeout(() => {
-      event.target.classList.add("");
-    }, 500);
-  },
-  false
-);
